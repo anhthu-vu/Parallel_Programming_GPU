@@ -3,5 +3,5 @@ This repository contains a mini project that I have done during the *Parallel Pr
 - In `MC.cu` file, we implemented Nested Monte-Carlo method to simulate on GPUs using [CUDA](https://developer.nvidia.com/cuda-toolkit) the price of an Asian option $F$ for many choices of starting values of $S_t$ and $I_t$ at any time $t$ in the grid $\left(\frac{1}{100}, \frac{2}{100}, \dot, \frac{99}{100}, 1\right)$ to collect a dataset of sample $(t, S_t, I_t, F)$ defined as below:
   + $I_t = \int_0^t S_sds$
   + $dS_t = S_t \sigma dW_t$ where $W$ is a Brownian motion
-  + $F(t, x, y) = \mathbb{E}$
+  + $F(t, x, y) = \mathcal{E}$
   + $\sigma = 0.2$ is the volatility
